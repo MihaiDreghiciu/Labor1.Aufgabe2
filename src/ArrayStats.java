@@ -13,10 +13,23 @@ public class ArrayStats {
 
     public static int getMin(int[] numbers) {
         int min = numbers[0];
+
         for (int n : numbers) {
-            if (n < min) min = n;
+            if (n < min)
+                min = n;
         }
+
         return min;
+    }
+
+    public static int getMaxSum(int[] numbers) {
+        int sum = 0;
+        int min = getMin(numbers);
+
+        for (int n : numbers)
+            sum += n;
+
+        return sum - min;
     }
 
 }
