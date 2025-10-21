@@ -32,4 +32,15 @@ public class ArrayStats {
         return sum - min;
     }
 
+    public static int getMinSum(int[] numbers) {
+        int sum = 0;
+        int max = getMax(numbers);
+
+        for (int n : numbers)
+            sum += n;
+
+        return sum - max;
+    }
+
+
 }
