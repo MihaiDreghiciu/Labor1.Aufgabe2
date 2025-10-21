@@ -11,4 +11,12 @@ public class ArrayStats {
         return max;
     }
 
+    public static int getMin(int[] numbers) {
+        int min = numbers[0];
+        for (int n : numbers) {
+            if (n < min) min = n;
+        }
+        return min;
+    }
+
 }
